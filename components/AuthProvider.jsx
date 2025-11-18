@@ -1,4 +1,3 @@
-// components/AuthProvider.jsx
 
 import { createContext, useContext, useEffect, useState } from "react";
 import { onAuthStateChanged, signOut } from "firebase/auth";
@@ -41,5 +40,4 @@ export function useAuth() {
   return ctx;
 }
 
-// 👈 ESTA LÍNEA ES LA QUE FALTABA
 export default AuthProvider;
