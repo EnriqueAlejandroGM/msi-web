@@ -1,5 +1,3 @@
-// pages/register.jsx
-
 import { useState } from "react";
 import NavbarMSI from "../components/Navbar";
 import FooterMSI from "../components/Footer";

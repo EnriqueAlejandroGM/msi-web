@@ -1,5 +1,3 @@
-// components/Navbar.jsx
-
 import Link from "next/link";
 import { useAuth } from "./AuthProvider";
 import { Navbar as BNavbar, Container, Nav, Button } from "react-bootstrap";
@@ -24,16 +22,14 @@ export default function NavbarMSI() {
 
       <Container>
         <Link href="/" passHref legacyBehavior>
-          <BNavbar.Brand>M.S.I</BNavbar.Brand>
+          <BNavbar.Brand>MSI</BNavbar.Brand>
         </Link>
         <BNavbar.Toggle aria-controls="basic-navbar-nav" />
         <BNavbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            {/* Inicio general */}
             <Link href="/" passHref legacyBehavior>
               <Nav.Link>Inicio</Nav.Link>
             </Link>
-            {/* Anclas a secciones del index */}
             <Link href="/#servicios" passHref legacyBehavior>
               <Nav.Link>Servicios</Nav.Link>
             </Link>
@@ -43,7 +39,6 @@ export default function NavbarMSI() {
             <Link href="/#contacto" passHref legacyBehavior>
               <Nav.Link>Contacto</Nav.Link>
             </Link>
-            {/* Página aparte tipo sección extendida */}
             <Link href="/about" passHref legacyBehavior>
               <Nav.Link>Sobre MSI</Nav.Link>
             </Link>

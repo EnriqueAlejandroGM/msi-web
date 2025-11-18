@@ -1,5 +1,3 @@
-// pages/index.jsx
-
 import NavbarMSI from "../components/Navbar";
 import FooterMSI from "../components/Footer";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
@@ -12,7 +10,6 @@ export default function HomePage() {
 
       <main>
         <Container className="mt-5">
-          {/* HERO PRINCIPAL (SECCIÓN INICIO) */}
           <Row className="justify-content-center" id="inicio">
             <Col lg={10}>
               <section className="msi-hero">

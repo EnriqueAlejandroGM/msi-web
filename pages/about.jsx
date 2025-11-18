@@ -1,5 +1,3 @@
-// pages/about.jsx
-
 import NavbarMSI from "../components/Navbar";
 import FooterMSI from "../components/Footer";
 import { Container, Row, Col, Card, Badge } from "react-bootstrap";
@@ -11,7 +9,6 @@ export default function AboutPage() {
 
       <main>
         <Container className="mt-5 mb-5">
-          {/* HERO SOBRE MSI + subnav interna */}
           <Row className="justify-content-center mb-4" id="historia">
             <Col lg={10}>
               <Card className="p-4 msi-card shadow-sm">
@@ -37,7 +34,6 @@ export default function AboutPage() {
                       directa con el cliente.
                     </p>
 
-                    {/* Subnavegación interna tipo single-page */}
                     <div className="msi-subnav">
                       <a href="#misionvision">Misión y visión</a>
                       <a href="#tecnologia">Tecnología</a>

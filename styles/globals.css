@@ -1,3 +1,4 @@
+
 /* Paleta MSI */
 :root {
   --msi-bg: #050814;
@@ -5,8 +6,8 @@
   --msi-surface: #111827;
   --msi-surface-soft: #1f2937;
   --msi-border: #334155;
-  --msi-accent: #4f8cff;        /* azul elegante estilo CNC */
-  --msi-accent-soft: #bcd8ff;   /* azul claro para detalles */
+  --msi-accent: #4f8cff;       
+  --msi-accent-soft: #bcd8ff;   
   --msi-text: #e5e7eb;
 }
 
@@ -29,6 +30,7 @@ body {
     sans-serif;
   background: radial-gradient(circle at top, #0b1120 0, #020617 55%, #000 100%);
   color: var(--msi-text);
+  font-family: "InterVariable", sans-serif;
 }
 
 
@@ -296,4 +298,59 @@ color: #ffffff;
 .msi-scroll-top-icon {
   display: inline-block;
   line-height: 1;
+}
+
+:root {
+  --font-xl: 2.4rem;
+  --font-lg: 1.6rem;
+  --font-md: 1.2rem;
+  --font-sm: 0.95rem;
+  --font-xs: 0.8rem;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.card-title {
+  font-size: var(--font-lg);
+  font-weight: 600;
+}
+
+.admin-label {
+  font-size: var(--font-sm);
+  opacity: 0.75;
+}
+
+.admin-value {
+  font-size: var(--font-md);
+  font-weight: 500;
+}
+
+/* Todo el texto dentro de tarjetas MSI debe ser claro */
+.msi-card,
+.msi-card p,
+.msi-card span,
+.msi-card small {
+  color: #e5e7eb;
+}
+
+/* Sobrescribir el gris apagado de Bootstrap para que sea legible en oscuro */
+.text-muted,
+.small.text-muted {
+  color: #cbd5f5 !important; 
+}
+
+/* Etiquetas explicativas en el panel admin */
+.admin-label {
+  font-size: 0.85rem;
+  color: #9ca3af; /* gris claro */
+}
+
+/* Valores importantes (correos, teléfonos, empresa, asunto) */
+.admin-value {
+  font-size: 0.95rem;
+  color: #e5e7eb;
+  font-weight: 500;
 }

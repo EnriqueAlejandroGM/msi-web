@@ -1,5 +1,3 @@
-// pages/login.jsx
-
 import { useState } from "react";
 import { useRouter } from "next/router";
 import NavbarMSI from "../components/Navbar";
